@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/logindemo-dubbo-consumer/logindemo-dubbo-consumer.iml" filepath="$PROJECT_DIR$/logindemo-dubbo-consumer/logindemo-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logindemo-dubbo-facade/logindemo-dubbo-facade.iml" filepath="$PROJECT_DIR$/logindemo-dubbo-facade/logindemo-dubbo-facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logindemo-dubbo-provider/logindemo-dubbo-provider.iml" filepath="$PROJECT_DIR$/logindemo-dubbo-provider/logindemo-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/my-first-dubbo-demo.iml" filepath="$PROJECT_DIR$/.idea/my-first-dubbo-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-dubbo-common/test-dubbo-common.iml" filepath="$PROJECT_DIR$/test-dubbo-common/test-dubbo-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-dubbo-consumer/test-dubbo-consumer.iml" filepath="$PROJECT_DIR$/test-dubbo-consumer/test-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-dubbo-provider/test-dubbo-provider.iml" filepath="$PROJECT_DIR$/test-dubbo-provider/test-dubbo-provider.iml" />
+    </modules>
+  </component>
+</project>

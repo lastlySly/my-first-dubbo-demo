@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!-- 提供方应用信息，用于计算依赖关系
+     name 应用名，
+     owner 所属者 （标识，没太大意义）-->
+    <dubbo:application name="logindemo-provider" owner="lastlysly"  />
+
+    <!-- 使用multicast广播注册中心暴露服务地址 -->
+    <dubbo:registry address="multicast://224.5.6.7:1234" />
+
+    <!-- 用dubbo协议在20880端口暴露服务
+     name="dubbo" 使用dubbo协议
+      port="20880" 服务提供者监听端口-->
+    <dubbo:protocol name="dubbo" port="20880" />
+
+
+    <!--==================配置式发布=====================Start-->
+    <!--    &lt;!&ndash; spring配置本地bean &ndash;&gt;
+        <bean id="demoService" class="cn.lastlysly.service.serviceimpl.DemoServiceImpl" />
+
+        &lt;!&ndash; 声明需要暴露的服务接口
+            把本地bean注册成远程服务
+            ref：哪个本地bean
+            interface：以什么接口暴露为远程服务
+                 &ndash;&gt;
+        <dubbo:service interface="cn.lastlysly.service.DemoService" ref="demoService" />-->
+    <!--==================配置式发布=====================End-->
+
+
+    <!-- 注解式发布   注解在接口实现类上@service注解改为dubbo提供的， -->
+    <!-- 扫描注解包路径，多个包用逗号分隔，不填pacakge表示扫描当前ApplicationContext中所有的类 -->
+    <dubbo:annotation package="cn.lastlysly.serviceimpl" />
+
+</beans>

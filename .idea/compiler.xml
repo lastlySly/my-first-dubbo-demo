@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="logindemo-dubbo-consumer" />
+        <module name="logindemo-dubbo-facade" />
+        <module name="logindemo-dubbo-provider" />
+        <module name="test-dubbo-common" />
+        <module name="test-dubbo-consumer" />
+        <module name="test-dubbo-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="logindemo-dubbo-consumer" target="1.8" />
+      <module name="logindemo-dubbo-facade" target="1.5" />
+      <module name="logindemo-dubbo-provider" target="1.8" />
+      <module name="test-dubbo-common" target="1.5" />
+      <module name="test-dubbo-consumer" target="1.5" />
+      <module name="test-dubbo-provider" target="1.5" />
+      <module name="testdubbocommon" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
